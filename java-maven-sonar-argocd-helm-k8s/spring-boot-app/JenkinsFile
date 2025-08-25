@@ -88,7 +88,7 @@ pipeline {
                 cat java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
 
                 # Replace image tag in a more generic way
-                sed -i "s|image: abhishekf5/ultimate-cicd:.*|image: shiv0786/web-app:${env.IMAGE_TAG}|g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
+                sed -i "s|image: shiv0786/web-app:.*|image: shiv0786/web-app:${env.IMAGE_TAG}|g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
 
                 cat java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
 
