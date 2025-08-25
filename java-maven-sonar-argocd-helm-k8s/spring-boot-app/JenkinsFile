@@ -100,10 +100,10 @@ pipeline {
                 # Set remote using credentials securely
                 git remote set-url origin https://$GIT_USERNAME:$GIT_PASSWORD@github.com/shivam0786tab/Jenkins-Zero-To-Hero.git
 				git checkout main
-				git pull --rebase origin main
                 # Commit and push
                 git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                 git commit -m "Updated image tag to ${env.IMAGE_TAG} | Jenkins Pipeline" || echo "No changes to commit"
+				git pull --rebase origin main
                 git push origin main
                 """
             }
