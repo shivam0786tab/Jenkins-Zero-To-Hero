@@ -98,7 +98,7 @@ pipeline {
 				git config --global --add safe.directory "/var/lib/jenkins/workspace/ultimate cicd pipeline"
 
                 # Set remote using credentials securely
-                git remote set-url origin https://$GIT_USERNAME:$GIT_PASSWORD@github.com/shivam0786tab/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/
+                git remote set-url origin https://$GIT_USERNAME:$GIT_PASSWORD@github.com/shivam0786tab/Jenkins-Zero-To-Hero.git
 
                 # Commit and push
                 git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
