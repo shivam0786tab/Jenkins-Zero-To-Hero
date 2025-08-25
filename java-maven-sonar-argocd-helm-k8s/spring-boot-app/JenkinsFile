@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git branch: 'main', url: 'https://github.com/shivam0786tab/Jenkins-Zero-To-Hero.git', credentialsId: 'git-cred-id'
+        // git branch: 'main', url: 'https://github.com/shivam0786tab/Jenkins-Zero-To-Hero.git', credentialsId: 'git-cred-id'
       }
     }
     stage('Build and Test') {
