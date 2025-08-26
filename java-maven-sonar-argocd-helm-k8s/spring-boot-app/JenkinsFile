@@ -95,7 +95,7 @@ pipeline {
                 # Git config
                 git config --global user.name "$GIT_USERNAME"
                 git config --global user.email "test@email.com"
-				git config --global --add safe.directory "/var/lib/jenkins/workspace/ultimate cicd pipeline"
+				git config --global --add safe.directory /var/lib/jenkins/workspace/ultimate-cicd
 
                 # Set remote using credentials securely
                 git remote set-url origin https://$GIT_USERNAME:$GIT_PASSWORD@github.com/shivam0786tab/Jenkins-Zero-To-Hero.git
