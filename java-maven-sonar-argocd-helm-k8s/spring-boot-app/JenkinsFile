@@ -3,7 +3,7 @@ pipeline {
   agent {
     docker {
       image baseImage()
-      args dockerSockMount() // mount Docker socket to access the host's Docker daemon
+      args dockerSocMount() // mount Docker socket to access the host's Docker daemon
     }
   }
   stages {
