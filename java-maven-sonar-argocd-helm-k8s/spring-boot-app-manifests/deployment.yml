@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: shiv0786/web-app:31
+        image: shiv0786/web-app:32
         ports:
         - containerPort: 8080
